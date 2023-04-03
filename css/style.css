@@ -76,6 +76,39 @@ header .container {
 
 }
 
+/* footer */
+footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    padding: 40px 0 60px;
+}
+
+footer a {
+    color: #9792e4;
+}
+
+footer .container div {
+    height: 40px;
+}
+
+/* footer versione tablet */
+@media screen and (min-width: 480px) {
+    footer .container {
+        width: 60%;
+    }
+}
+
+/* footer versione desktop */
+@media screen and (min-width: 768px) {
+    footer .container {
+        width: 40%;
+    }    
+}
+
 /* DEBUG */
 /* header {
     height: 100px;
