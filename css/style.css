@@ -7,3 +7,29 @@
 body {
     font-family: 'PT Sans', sans-serif;
 }
+
+/* DEBUG */
+header {
+    height: 100px;
+    background-color: blue;
+}
+
+section {
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+footer {
+    height: 100px;
+    background-color: black;
+}
+
+div, nav {
+    height: 20px;
+    border: 1px solid red;
+}
+
+.container {
+    height: 100%;
+}
