@@ -8,8 +8,76 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
-/* DEBUG */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* header */
 header {
+    background-color: #0084fd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: xx-large;
+    padding-top: 5px;
+}
+
+#menu {
+    display: none;
+}
+
+/* header versione desktop */
+@media screen and (min-width: 768px) {
+    #menu-icon {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        list-style-type: none; 
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #menu li {
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    #menu button {
+        font-size: 20px;
+        border: none;
+        border-radius: 20px;
+        padding: 7px 10px;
+    }
+
+    header img {
+        padding-top: 5px;
+    }
+
+}
+
+/* DEBUG */
+/* header {
     height: 100px;
     background-color: blue;
 }
@@ -32,4 +100,4 @@ div, nav {
 
 .container {
     height: 100%;
-}
+} */
