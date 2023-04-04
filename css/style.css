@@ -159,6 +159,96 @@ header .container {
     }    
 }
 
+/* planning */
+.planning {
+    background-color: #9792e4;
+    padding-bottom: 3.5rem;
+}
+
+.first-col {
+    color: #fff;
+}
+
+#plan1 {
+    height: 50vh;
+}
+
+#plan1 img {
+    max-height: 100%;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.first-col h2 {
+    padding: 70px 0 40px;
+    font-size: 2rem;
+}
+
+.first-col p {
+    padding-bottom: 30px;
+}
+
+.second-col {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+#plan2 {
+    height: 50vh;
+}
+
+#plan2 img {
+    max-height: 100%;
+}
+
+.second-col h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.second-col p {
+    padding-bottom: 1rem;
+}
+
+.second-col button {
+    background-color: #9792e4;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+/* planning versione tablet */
+@media screen and (min-width: 480px) {
+    #plan1 {
+        height: 100vh;
+    }
+
+    .first-col h2 {
+        font-size: 4.5rem;
+    }
+
+}
+
+/* planning versione desktop */
+@media screen and (min-width: 768px) {
+    #plan1 {
+        height: 70vh;
+    }
+    
+    .first-col h2 {
+        font-size: 2rem;
+    }
+
+    .planning .container {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-end;
+    }
+
+}
+
 /* call to action */
 .call-to-action {
     background-color: #9792e4;
