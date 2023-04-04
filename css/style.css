@@ -8,13 +8,25 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.card {
+    border-radius: 20px;
+}
+
 .container {
     width: 90%;
     margin: auto;
 }
 
-button {
-    cursor: pointer;
+/* container desktop */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+    }    
 }
 
 /* header */
@@ -65,7 +77,6 @@ header .container {
 
     #menu button {
         font-size: 20px;
-        border: none;
         border-radius: 20px;
         padding: 7px 10px;
     }
@@ -74,6 +85,78 @@ header .container {
         padding-top: 5px;
     }
 
+}
+
+/* developer */
+.dev{
+    margin-top: 120px;
+}
+
+.dev .card {
+    background-color: #b5ddff;
+    padding: 30px 30px 0;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.dev h3 {
+    color: #0084fd;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.dev p {
+    color: rgb(75, 75, 75);
+    padding-bottom: 30px;
+}
+
+.dev button {
+    text-align: center;
+    color: #fff;
+    background-color: #0084fd;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+#phone {
+    height: 300px;
+    margin-top: 30px;
+}
+
+#phone img {
+    max-height: 100%;
+}
+
+.fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn {
+    color: #0084fd;
+    font-size: 80px;
+    padding-bottom: 20px;
+}
+
+/* developer versione tablet */
+@media screen and (min-width: 480px) {
+    #demo {
+        width: calc((100% / 3) * 2 - 20px);
+        text-align: start;    
+    }
+
+    .dev .card {
+        width: calc(100% / 3 - 20px);
+    }
+
+    .dev .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/* developer versione desktop */
+@media screen and (min-width: 768px) {
+    #demo {
+        display: flex;
+    }    
 }
 
 /* call to action */
@@ -102,7 +185,6 @@ header .container {
 .call-to-action button {
     padding: 15px 40px;
     color: #9792e4;
-    border: none;
     border-radius: 30px;
     font-size: 18px;
     margin-bottom: 20px;
@@ -127,6 +209,10 @@ header .container {
 @media screen and (min-width: 768px) {
     .call-to-action .container {
         width: 50%;
+    }
+    .call-to-action p {
+        max-width: 70%;
+        margin: auto;
     }
 }
 
