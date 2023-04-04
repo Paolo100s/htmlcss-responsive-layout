@@ -36,6 +36,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 
 header .container {
@@ -370,6 +371,71 @@ header .container {
         width: calc(100% / 3 - 2rem);
     }
     
+}
+
+/* about us */
+.about-us h2 {
+    color: #9792e4;
+    font-size: 3rem;
+    padding: 3rem 0 1rem;
+}
+
+.about-us p {
+    padding: 1rem 0;
+}
+
+#img-about {
+    height: 200px;
+    margin-top: 2rem;
+    position: relative;
+}
+
+#img-about img {
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.fa-quote-left {
+    color: #9792e4;
+    font-size: 4rem;
+    position: absolute;
+    left: 16%;
+    z-index: 1;
+}
+
+.about-us h3 {
+    color: #9792e4;
+    font-size: 1.7rem;
+    padding: 2rem 0;
+}
+
+.about-us button {
+    background-color: #9792e4;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    margin-bottom: 4rem;
+    font-size: 0.85rem;
+}
+
+.fa-linkedin {
+    padding-right: 0.5rem;
+}
+
+/* about us versione tablet */
+@media screen and (min-width: 480px) {
+    .about-us .container {
+        display: flex;
+        gap: 5rem;
+    }
+    
+    .about-us h2 {
+        font-size: 4.5rem;
+    }
+
+    .fa-quote-left {
+        left: 76%;
+    }
 }
 
 /* call to action */
