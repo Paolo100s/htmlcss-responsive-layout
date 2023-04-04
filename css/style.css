@@ -246,7 +246,60 @@ header .container {
         gap: 2rem;
         align-items: flex-end;
     }
+}
 
+/* testimonials */
+.testimonials {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.testimonials span {
+    display: block;
+}
+
+.testimonials h2 {
+    color: #9792e4;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.testimonials p {
+    padding-bottom: 2rem;
+}
+
+.testimonials .card {
+    background-color: #9792e4;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.img-testimonial {
+    height: 200px;
+    padding: 2rem;
+}
+
+.img-testimonial img {
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.testimonials h4 {
+    padding-bottom: 2rem;
+}
+
+/* testimonials versione tablet */
+@media screen and (min-width: 480px) {
+    .testimonials .card {
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+
+    .testimonials .card p {
+        padding-top: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 /* call to action */
